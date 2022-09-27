@@ -39,7 +39,6 @@ let lastPos = {x: 0, y: 0};
 for(let i = 0; i < lines.length; i++){
     let lineColor = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
     for(let j = 0; j < lines[i].length; j++){
-
         let posX = 0 + 25 + (j * canvas.width / mX);
         let posY = canvas.height - (25 + ((canvas.height-50) / mY) * lines[i][j]);
         canvasCtx.fillStyle = lineColor;
